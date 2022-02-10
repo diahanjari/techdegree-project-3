@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAFFF3;
+    font-family: 'Vidaloka', serif;
+    color:#2F4858;
+}
+
+header {
+    background-color: #394B41;
+    color: #BED9D1;
+    font-family: 'Vidaloka', serif;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+}
+
+.subtitle,
+.description,
+footer {
+    text-align: center;
+}
+
+footer {
+    font-style: italic;
+}
+
+form {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #BED9D1;
+    border-radius: 8px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    /* display: block; */
+    border: none;
+    font-size: 16px;
+    height: auto;
+    /* margin: 0; */
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    margin-bottom: 30px;
+    font-family: 'Vidaloka', serif;
+    color: #7D7A1A;
+}
+
+option {
+    font-family: 'Vidaloka', serif;
+    color: #7D7A1A;
+}
+
+::placeholder {
+    font-family: 'Vidaloka', serif;
+    text-align: right;
+    font-style: italic;
+    color: #7D7A1A;
+    padding-right: 5px;
+}
+
+textarea::placeholder {
+    font-family: 'Vidaloka', serif;
+    text-align: left;
+    font-style: italic;
+    color: #7D7A1A;
+}
+
+label {
+    display: block;
+    margin: 8px 0px;
+}
+
+input[id="zipcode"] {
+    width: 50%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 6px 8px 0;
+}
+
+label.light {
+    display: inline;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+textarea {
+    height: 100px;
+}
+.bold-line {
+    border: 2px solid #6CA2A9;
+}
+
+.thin-line {
+    border: 0.5px solid #6CA2A9;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #494737;
+    background-color: #EEE683;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #B3AD76;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+
+/* CSS Transition */
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+    font-weight: bold;
+}
+
+input:focus {
+    background-color: #FFC5A5;
+    transition: 300ms;
+}
+
+button:hover {
+    border-color: #494737;
+}
+
+/* Flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    main {
+       max-width: 800px;
+       margin: auto;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .container label {
+        width: 30%;
+        margin: auto 0;
+    }
+
+    input[id="zipcode"] {
+        width: 25%;
+    }
+
+}
