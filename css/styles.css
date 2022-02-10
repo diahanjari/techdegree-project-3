@@ -150,7 +150,6 @@ button:hover {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: middle;
 }
 
 .newsletter {
@@ -178,7 +177,7 @@ label.light {
     }
 
     label {
-        padding-bottom: 15px;
+        padding-bottom: 18px;
     }
 
     .label_nl {
