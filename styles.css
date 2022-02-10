@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* Form Style */
 body {
     background-color: #EAFFF3;
     font-family: 'Vidaloka', serif;
@@ -45,15 +46,13 @@ input[type="email"],
 input[type="tel"],
 textarea,
 select {
-    /* display: block; */
     border: none;
     font-size: 16px;
     height: auto;
-    /* margin: 0; */
     padding: 15px;
     width: 100%;
     background-color: #e8eeef;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-family: 'Vidaloka', serif;
     color: #7D7A1A;
 }
@@ -63,24 +62,20 @@ option {
     color: #7D7A1A;
 }
 
+option, 
 ::placeholder {
     font-family: 'Vidaloka', serif;
+    color: #7D7A1A;
+}
+
+::placeholder {
     text-align: right;
     font-style: italic;
-    color: #7D7A1A;
     padding-right: 5px;
 }
 
 textarea::placeholder {
-    font-family: 'Vidaloka', serif;
     text-align: left;
-    font-style: italic;
-    color: #7D7A1A;
-}
-
-label {
-    display: block;
-    margin: 8px 0px;
 }
 
 input[id="zipcode"] {
@@ -101,9 +96,16 @@ legend {
     font-size: 1.6em;
     margin-bottom: 10px;
 }
+
 textarea {
     height: 100px;
 }
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
 .bold-line {
     border: 2px solid #6CA2A9;
 }
@@ -113,7 +115,7 @@ textarea {
 }
 
 button {
-    padding: 19px 39px 18px 39px;
+    padding: 20px 40px;
     color: #494737;
     background-color: #EEE683;
     font-size: 18px;
@@ -133,7 +135,9 @@ input[type="radio"]:checked + label {
     font-weight: bold;
 }
 
-input:focus {
+input:focus,
+textarea:focus,
+select:focus {
     background-color: #FFC5A5;
     transition: 300ms;
 }
@@ -146,6 +150,16 @@ button:hover {
 .container {
     display: flex;
     flex-direction: column;
+    align-items: middle;
+}
+
+.newsletter {
+    margin-bottom: 20px;
+}
+
+label.light {
+    display: inline;
+    margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -163,13 +177,17 @@ button:hover {
         margin: auto 0;
     }
 
+    label {
+        padding-bottom: 15px;
+    }
+
+    .label_nl {
+        padding-bottom: 0;
+    }
+
     input[id="zipcode"] {
         width: 25%;
         margin-right: 57%;
-    }
-
-    footer {
-        font-style: normal;
     }
 
 }

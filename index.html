@@ -37,8 +37,8 @@
                 </div>
 
                 <div class="container">
-                <label for="telephone">Phone Number: </label>
-                <input type="tel" id="telephone" name="user_telephone" placeholder="Required" required>
+                    <label for="telephone">Phone Number: </label>
+                    <input type="tel" id="telephone" name="user_telephone" placeholder="Required" required>
                 </div>
 
                 <div class="container">
@@ -54,7 +54,7 @@
                 <div class="container">
                     <label for="state">State: </label>
                     <select id="state" name="user_state" required>
-                        <option value="choose_state">Choose State</option>
+                        <option value="" hidden>Choose State</option>
                         <option value="new_york">New York</option>
                         <option value="illinois">Illinois</option>
                         <option value="washington">Washington</option>
@@ -75,17 +75,23 @@
             <fieldset>
                 <legend>Newsletter</legend>
 
-                <label>Select the newsletters you would like to receive</label>
-                <input type="checkbox" id="html_interest" value="html_interest" name="user_newsletter1"><label for="html_interest" class="light">HTML News</label> <br>
-                <input type="checkbox" id="css_interest" value="css_interest" name="user_newsletter2"><label for="css_interest" class="light">CSS News</label> <br>
-                <input type="checkbox" id="js_interest" value="js_interest" name="user_newsletter3"><label for="js_interest" class="light">Javascript News</label>
+                <div class="newsletter">
+                    <label class="label_nl">Select the newsletters you would like to receive</label>
+                    <input type="checkbox" id="html_interest" value="html_interest" name="user_newsletter1"><label for="html_interest" class="light">HTML News</label> <br>
+                    <input type="checkbox" id="css_interest" value="css_interest" name="user_newsletter2"><label for="css_interest" class="light">CSS News</label> <br>
+                    <input type="checkbox" id="js_interest" value="js_interest" name="user_newsletter3"><label for="js_interest" class="light">Javascript News</label>
+                </div>
 
-                <label>Newsletter format</label>
-                <input type="radio" id="html_format" value="html_format" name="user_format"> <label for="html_format" class="light">HTML</label> <br>
-                <input type="radio" id="plaintext_format" value="plaintext_format" name="user_format"> <label for="plaintext_format" class="light">Plain Text</label>
+                <div class="newsletter">
+                    <label class="label_nl">Newsletter format</label>
+                    <input type="radio" id="html_format" value="html_format" name="user_format"> <label for="html_format" class="light">HTML</label> <br>
+                    <input type="radio" id="plaintext_format" value="plaintext_format" name="user_format"> <label for="plaintext_format" class="light">Plain Text</label>
+                </div>
 
-                <label for="other_topics">Other topics you'd like to hear about</label>
-                <textarea id="other_topics" name="user_other_topics" placeholder="Write something here" required></textarea>
+                <div class="newsletter">
+                    <label for="other_topics" class="label_nl">Other topics you'd like to hear about</label>
+                    <textarea id="other_topics" name="user_other_topics" placeholder="Write something here" required></textarea>
+                </div> 
             </fieldset>
 
             <button type="submit">Sign Up!</button>
